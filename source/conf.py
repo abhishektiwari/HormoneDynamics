@@ -25,7 +25,10 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx', 'sphinx.ext.todo', 'sphinx.ext.mathjax', 'sphinx.ext.ifconfig']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx', 'sphinx.ext.todo', 'sphinx.ext.mathjax', 'sphinx.ext.citelinks', 'sphinx.ext.ifconfig']
+
+# Citeulike, DOI, Pubmed
+citelinks = {'cite': ('http://www.citeulike.org/user/abhishek_tiwari/article/%s','citeulike'), 'doi': ('http://dx.doi.org/%s','doi'), 'pubmed': ('http://www.ncbi.nlm.nih.gov/pubmed/%s','pubmed')}
 
 # MathJax support
 mathjax_path = 'http://cdn.abhishek-tiwari.com/mathjax/mathjax/MathJax.js' 
